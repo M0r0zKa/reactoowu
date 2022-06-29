@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.root {
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.divForm {
+    width: 250px;
+    height: 450px;
+    display: flex;
+    border: 1px solid black;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    background: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.divFormPost {
+    width: 710px;
+    height: 450px;
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-evenly;
+    background: aliceblue;
 }
+.formPost{
+    width: 710px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.userId{
+    width: 28%;
+}
+.title{
+     width: 69%;
+ }
+
+.body{
+    width: 700px;
+    height: 250px;
+}
+.buttonPost{
+    width: 100%;
+    height: 100px;
 }

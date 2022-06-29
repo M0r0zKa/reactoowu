@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {Rockets} from "./components/rockets/Rockets";
+import {FormUser} from "./components/formsUser/formUser";
+import FormPost from "./components/formsPost/formPost";
 
 function App() {
   return (
-  <div>
+  <div className={'root'}>
 
-    <Rockets/>
-
+<FormUser/>
+<FormPost/>
   </div>
   );
 }

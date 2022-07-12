@@ -1,15 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import {Rockets} from "./components/rockets/Rockets";
+import React from 'react';
 
-function App() {
-  return (
-  <div>
+import {Route, Routes} from "react-router-dom";
 
-    <Rockets/>
+import {MainLayout} from "./layout/main/MainLayout";
+import {UsersPage} from "./pages/UsersPage";
+import {PostPage} from "./pages/PostPage";
 
-  </div>
-  );
+
+function App(props) {
+    return (
+        <div>
+            <MainLayout/>
+            <div>
+                <Routes>
+                    <Route path={'users'} element={<UsersPage/>}/>
+                    <Route path={'posts'} element={<PostPage/>}/>
+                </Routes>
+            </div>
+        </div>
+    )
+        ;
 }
 
 export default App;

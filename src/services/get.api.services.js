@@ -1,6 +1,4 @@
-import {Component} from 'react';
-
-class GetApiServices extends Component {
+class GetApiServices {
     _url = 'https://jsonplaceholder.typicode.com'
 
     getUsers(){

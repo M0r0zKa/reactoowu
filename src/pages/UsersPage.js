@@ -1,5 +1,6 @@
 import React from 'react';
-import {Users} from "../Components/Users/Users";
+
+import {Users} from "../Components";
 
 function UsersPage(props) {
     return (

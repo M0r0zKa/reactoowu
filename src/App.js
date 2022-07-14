@@ -13,8 +13,10 @@ function App(props) {
             <MainLayout/>
             <div>
                 <Routes>
+                    <Route path={'/'} element={<UsersPage/>}/>
                     <Route path={'users'} element={<UsersPage/>}/>
-                    <Route path={'posts'} element={<PostPage/>}/>
+                    <Route path={'posts'} element={<PostPage/>}>
+                    </Route>
                 </Routes>
             </div>
         </div>
